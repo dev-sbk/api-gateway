@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-md-3">
+        <span class="hipster img-fluid rounded"></span>
+    </div>
+    <div class="col-md-9">
+        <div [ngSwitch]="isAuthenticated()">
+            <div class="alert alert-success" *ngSwitchCase="true">
+                <span *ngIf="account"
+                > You are logged in as user "{{account.login}}". </span>
+            </div>
+        </div>
+        <h1 class="display-4">CLOUD ENDPOINTS</h1>
+        <p class="lead">Développez, déployez et gérez des API </p>
+
+
+        <h1>Gérez vos API</h1>
+        <div class="alert alert-info" >
+            <p>Développez, déployez, protégez et surveillez vos API grâce à Notre Cloud Endpoints. Le proxy basé sur le service NETFLIX ZUUL et l'architecture distribuée offrent des performances et une évolutivité inégalées. Grâce à une spécification d'API ouverte ou à l'un de nos frameworks d'API, Cloud Endpoints vous donne accès aux outils dont vous avez besoin pour chaque phase de développement de votre API et vous fournit des statistiques via Google Cloud Monitoring, Cloud Trace et Stackdriver Logging.</p>
+        </div>
+        <button class="btn btn-primary" (click)="login()">ESSAI GRATUIT</button>
+    </div>
+</div>

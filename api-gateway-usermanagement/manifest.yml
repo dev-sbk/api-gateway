@@ -1,0 +1,7 @@
+---
+applications:
+ - name: api-getway-usermanagement
+   random-route: true
+   path: target/api-getway-usermanagement.jar
+   memory: 256M
+   instances: 1
